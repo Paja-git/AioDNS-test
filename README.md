@@ -3,7 +3,7 @@
 Copy code to HA /config directory
 Run python3 test_aiodns.py  
 Explanation of the code:  
-The test_aiodns.py script tests the aiodns library for asynchronous DNS resolution in a Home Assistant Docker container.   
+The **test_aiodns.py** script tests the aiodns library for asynchronous DNS resolution in a Home Assistant Docker container.   
 It performs:  
 	* A record queries for registry.hub.docker.com (single-domain test)  
 	* Multiple domains (registry.hub.docker.com, google.com, nonexistent.domain) concurrently, with a 2-second timeout.   
