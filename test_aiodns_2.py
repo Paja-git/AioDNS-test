@@ -81,10 +81,10 @@ async def test_multi_domain_with_timeout(domains, query_type, timeout=5.0):
     resolver.cancel()
 
 async def main():
-    # Run original single-domain test
+    # Run single-domain test
     await test_dns_lookup()
 
-    # Run new multi-domain test with timeout
+    # Run multi-domain test with timeout
     domains = ["registry.hub.docker.com", "google.com", "nonexistent.domain"]
     await test_multi_domain_with_timeout(domains, 'A', timeout=2.0)
 
